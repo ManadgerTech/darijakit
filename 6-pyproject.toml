@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "darijakit"
+version = "0.1.0"
+description = "Developer toolkit for Moroccan Darija on local LLMs: Arabizi transliteration, normalization and benchmarking."
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Manadger Tech", email = "contact@manadgerhost.com"}]
+requires-python = ">=3.9"
+keywords = ["darija", "moroccan-arabic", "arabizi", "llm", "ollama", "nlp", "morocco"]
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: Arabic",
+    "Programming Language :: Python :: 3",
+    "Topic :: Text Processing :: Linguistic",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/ManadgerTech/darijakit"
+Issues = "https://github.com/ManadgerTech/darijakit/issues"
+
+[project.scripts]
+darijakit = "darijakit:main"
+
+[tool.setuptools]
+py-modules = ["darijakit"]
